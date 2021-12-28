@@ -17,10 +17,14 @@ import { useAuth } from "@hooks/Auth";
 export function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { signIn, isLogging } = useAuth();
+  const { signIn, signOut, forgotPassword, isLogging } = useAuth();
 
   function handleSignIn() {
     signIn(email, password);
+  }
+
+  function handleforgotPassword() {
+    forgotPassword(email);
   }
 
   return (
@@ -46,7 +50,7 @@ export function SignIn() {
             onChangeText={setPassword}
           />
 
-          <ForgotPasswordButton>
+          <ForgotPasswordButton onPress={handleforgotPassword}>
             <ForgotPasswordLabel>Esqueci minha senha</ForgotPasswordLabel>
           </ForgotPasswordButton>
 
