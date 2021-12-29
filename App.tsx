@@ -6,7 +6,7 @@ import { StatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components/native";
 import theme from "./src/theme";
 
-import { SignIn } from "@screens/SignIn";
+import { Home } from "@screens/Home";
 import { AuthProvider } from "@hooks/Auth";
 
 export default function App() {
@@ -24,7 +24,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <StatusBar style="light" translucent backgroundColor="transparent" />
       <AuthProvider>
-        <SignIn />
+        <Home />
       </AuthProvider>
     </ThemeProvider>
   );
