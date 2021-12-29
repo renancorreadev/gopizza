@@ -2,7 +2,7 @@ import React from "react";
 import { TextInputProps } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { useTheme } from "styled-components/native";
-
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { Container, Input, Button, InputArea, ButtonClear } from "./styles";
 
 type Props = TextInputProps & {
@@ -22,10 +22,11 @@ export function Search({ onSearch, onClear, ...rest }: Props) {
           <Feather name="x" size={16} />
         </ButtonClear>
       </InputArea>
-
-      <Button onPress={onSearch}>
-        <Feather name="search" size={16} color={COLORS.TITLE} />
-      </Button>
+      <GestureHandlerRootView>
+        <Button onPress={onSearch} {...rest}>
+          <Feather name="search" size={16} color={COLORS.TITLE} />
+        </Button>
+      </GestureHandlerRootView>
     </Container>
   );
 }

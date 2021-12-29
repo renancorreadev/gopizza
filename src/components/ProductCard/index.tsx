@@ -2,6 +2,7 @@ import React from "react";
 import { RectButtonProps } from "react-native-gesture-handler";
 import { useTheme } from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 import {
   Container,
@@ -30,22 +31,24 @@ export function ProductCard({ data, ...rest }: Props) {
 
   return (
     <Container>
-      <Content {...rest}>
-        <Image source={{ uri: data.photo_url }} />
+      <GestureHandlerRootView>
+        <Content {...rest}>
+          <Image source={{ uri: data.photo_url }} />
 
-        <Details>
-          <Identification>
-            <Name>{data.name}</Name>
-            <Feather
-              name="chevron-right"
-              size={18}
-              color={COLORS.SHAPE}
-            ></Feather>
-          </Identification>
+          <Details>
+            <Identification>
+              <Name>{data.name}</Name>
+              <Feather
+                name="chevron-right"
+                size={18}
+                color={COLORS.SHAPE}
+              ></Feather>
+            </Identification>
 
-          <Description>{data.description}</Description>
-        </Details>
-      </Content>
+            <Description>{data.description}</Description>
+          </Details>
+        </Content>
+      </GestureHandlerRootView>
       <Line />
     </Container>
   );

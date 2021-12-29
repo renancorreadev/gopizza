@@ -19,6 +19,8 @@ import com.facebook.react.bridge.JSIModulePackage;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
+
 
 
 
