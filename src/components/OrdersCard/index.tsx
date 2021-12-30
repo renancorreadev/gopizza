@@ -11,18 +11,30 @@ import {
   StatusTypeProps,
 } from "./styles";
 
-type Props = TouchableOpacityProps & {
-  index: number;
+export type OrderProps = {
+  id: string;
+  pizza: string;
+  image: string;
+  status: StatusTypeProps;
+  table_number: string;
+  quantity: string;
 };
 
-export function OrderCard({ index, ...rest }: Props) {
+type Props = TouchableOpacityProps & {
+  index: number;
+  data: OrderProps;
+};
+
+export function OrderCard({ index, data, ...rest }: Props) {
   return (
     <Container index={index} {...rest}>
-      <Image source={{ uri: "https://github.com/skyxcripto.png" }} />
+      <Image source={{ uri: data.image }} />
       <Name>4 Queijos</Name>
-      <Description>Mesa 6 ∘ Qnt: 1</Description>
-      <StatusContainer status="Pronto">
-        <StatusLabel status="Pronto">Pronto</StatusLabel>
+      <Description>
+        Mesa {data.table_number} ∘ Qnt: {data.quantity}
+      </Description>
+      <StatusContainer status={data.status}>
+        <StatusLabel status={data.status}>{data.status}</StatusLabel>
       </StatusContainer>
     </Container>
   );
