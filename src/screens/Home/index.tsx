@@ -8,6 +8,7 @@ import { useNavigation, useFocusEffect } from "@react-navigation/native";
 
 import { Search } from "@components/Search";
 import { ProductCard, ProductProps } from "@components/ProductCard";
+import { useAuth } from "@hooks/Auth";
 
 import {
   Container,
@@ -26,6 +27,7 @@ export function Home() {
   const [search, setSearch] = useState("");
   const navigation = useNavigation();
   const { COLORS } = useTheme();
+  const { user, signOut } = useAuth();
 
   function fecthPizzas(value: string) {
     const formattedValue = value.toLocaleLowerCase().trim();
@@ -59,7 +61,8 @@ export function Home() {
   }
 
   function handleOpen(id: string) {
-    navigation.navigate("product", { id });
+    const route = user?.isAdmin ? "product" : "order";
+    navigation.navigate(route, { id });
   }
 
   function handleAdd() {
@@ -79,7 +82,7 @@ export function Home() {
           <GreetingEmoji source={happyEmoji}></GreetingEmoji>
           <GreetingText>Olá, Admin</GreetingText>
         </Greeting>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={signOut}>
           <MaterialIcons name="logout" color={COLORS.TITLE} size={24} />
         </TouchableOpacity>
       </Header>
@@ -106,12 +109,14 @@ export function Home() {
           paddingTop: 24,
         }}
       />
-      <NewProductButton
-        title="Cadastrar Pizza"
-        type="secondary"
-        onPress={handleAdd}
-        isLoading={false}
-      />
+      {user?.isAdmin && (
+        <NewProductButton
+          title="Cadastrar Pizza"
+          type="secondary"
+          onPress={handleAdd}
+          isLoading={false}
+        />
+      )}
     </Container>
   );
 }
