@@ -29,7 +29,23 @@ Application developed in React-Native using Styled-Components, Firebase for auth
   </tr>
 </table>
 
+### Installation
 
+# Clone this repository
+$ git clone <https://github.com/skyxcripto/gopizza>
+
+# Access the project folder in the terminal/cmd
+$ cd gopizza-master
+
+# Install all dependency
+$ yarn install
+
+# Open Virtual Android (Android Studio or Simulator)
+
+# Execute this app
+$ yarn android or expo start
+
+# Sucess!
 
 
 
