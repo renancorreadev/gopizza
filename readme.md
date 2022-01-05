@@ -9,6 +9,21 @@ Application developed in React-Native using Styled-Components, Firebase for auth
 [![GitHub commits](https://badgen.net/github/commits/Naereen/Strapdown.js)](https://github.com/skyxcripto/gopizza/commits?author=skyxcripto)
 [![Sparkline](https://stars.medv.io/Naereen/badges.svg)](https://stars.medv.io/Naereen/badges)
 
+<!--ts-->
+   * [Sobre](#Sobre)
+   * [Tabela de Conteudo](#tabela-de-conteudo)
+   * [Instalação](#instalacao)
+   * [Como usar](#como-usar)
+      * [Pre Requisitos](#pre-requisitos)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+   * [Tests](#testes)
+   * [Tecnologias](#tecnologias)
+<!--te-->
+
+
 
 
 
