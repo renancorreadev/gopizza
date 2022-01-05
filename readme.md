@@ -7,7 +7,9 @@ Application developed in React-Native using Styled-Components, Firebase for auth
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://github.dev/skyxcripto/gopizza)
 [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
 [![GitHub commits](https://badgen.net/github/commits/Naereen/Strapdown.js)](https://github.com/skyxcripto/gopizza/commits?author=skyxcripto)
-/visual-studio-app-center/builds/:owner/:app/:branch/:token
+[![Sparkline](https://stars.medv.io/Naereen/badges.svg)](https://stars.medv.io/Naereen/badges)
+
+
 
 
 
