@@ -18,7 +18,7 @@ Application developed in React-Native using Styled-Components, Firebase for auth
 
 * SignUp Mobile
 
-<img src="https://github.com/skyxcripto/gopizza/blob/master/public/Login.png" width="200" height="200" />
+<img src="https://github.com/skyxcripto/gopizza/blob/master/public/Login.png" width="400" height="500"/>
 
 
 
