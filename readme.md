@@ -9,19 +9,16 @@ Application developed in React-Native using Styled-Components, Firebase for auth
 [![GitHub commits](https://badgen.net/github/commits/Naereen/Strapdown.js)](https://github.com/skyxcripto/gopizza/commits?author=skyxcripto)
 [![Sparkline](https://stars.medv.io/Naereen/badges.svg)](https://stars.medv.io/Naereen/badges)
 
-<!--ts-->
-   * [Sobre](#Sobre)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Instalação](#instalacao)
-   * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-   * [Tests](#testes)
-   * [Tecnologias](#tecnologias)
-<!--te-->
+### Features
+
+- [x] Two types of users: Waiter and Admin
+- [x] Garcom can select a pizza and specify size, quantity, and value.
+- [x] Admin can create new pizzas and change a pizza delivery status.
+- [x] The waiter can follow the progress of the pizza in the kitchen in real time.
+
+* SignUp Mobile
+
+![SignUp Mobile](https://github.com/skyxcripto/gopizza/blob/master/public/Login.png)
 
 
 
