@@ -20,12 +20,12 @@ Application developed in React-Native using Styled-Components, Firebase for auth
 
 <table>
   <tr>
-    <td><img src="https://github.com/skyxcripto/gopizza/blob/master/public/Login.png" width="300" height="500"/></td>
-    <td><img src="https://github.com/skyxcripto/gopizza/blob/master/public/Login.png" width="300" height="500"/></td>
+    <td style="padding: 50px"><img src="https://github.com/skyxcripto/gopizza/blob/master/public/Login.png" width="300" height="500"/></td>
+    <td style="padding: 50px"><img src="https://github.com/skyxcripto/gopizza/blob/master/public/Login.png" width="300" height="500"/></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/skyxcripto/gopizza/blob/master/public/Login.png" width="300" height="500"/></td>
-    <td><img src="https://github.com/skyxcripto/gopizza/blob/master/public/Login.png" width="300" height="500"/></td>
+    <td style="padding: 50px"><img src="https://github.com/skyxcripto/gopizza/blob/master/public/Login.png" width="300" height="500"/></td>
+    <td style="padding: 50px"><img src="https://github.com/skyxcripto/gopizza/blob/master/public/Login.png" width="300" height="500"/></td>
   </tr>
 </table>
 
